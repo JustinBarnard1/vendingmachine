@@ -27,8 +27,9 @@ export default class VendingController {
 
 
 
-  buy() {
-    VendingService.buy()
+  buy(id) {
+    console.log("here works")
+    VendingService.buy(id)
     _drawItem()
     _drawMoney()
   }

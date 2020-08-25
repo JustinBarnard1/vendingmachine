@@ -1,5 +1,6 @@
 export default class Vending {
-    constructor(name, img, count, price) {
+    constructor(id, name, img, count, price) {
+        this.id = id
         this.name = name
         this.img = img
         this.count = count
@@ -14,7 +15,7 @@ export default class Vending {
                 <h5 class="card-title">${this.name}</h5>
                 <p class="card-text">Available: ${this.count}</p>
                 <p class="card-text">$ ${this.price}</p>
-                <a href="#" class="btn btn-primary" onclick"app.vendingContoller.buy()">Buy</a>
+                <button class="btn btn-primary" onclick="app.vendingController.buy(${this.id})">Buy</button>
              </div>
         </div>
         `
