@@ -9,7 +9,7 @@ export default class Vending {
 
     get Template() {
         return `
-        <div class="card" style="width: 18rem;">
+        <div class="card text-center" style="width: 18rem;">
             <img src="${this.img}" class="card-img-top" alt="this.name">
             <div class="card-body">
                 <h5 class="card-title">${this.name}</h5>

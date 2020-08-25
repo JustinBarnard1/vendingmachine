@@ -11,16 +11,30 @@
 </head>
 
 <body>
+    <header class="container-fluid row">
+        <h3 class="col bg-primary text-center text-light">Vending Machine</h3>
+    </header>
 
-    <h1>Hello vendingmachine</h1>
-    <div>
-        <p>$ <span id="money"></span><button type="button" class="btn btn-primary"
-                onclick="app.vendingController.addCoin()">Add Quarter</button></p>
-    </div>
-    <div id="item">
+    <main class="container-fluid">
 
-    </div>
 
+        <div class="row mt-1">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary ml-1" onclick="app.vendingController.addCoin()">Add
+                    Quarter</button>
+                <p class="col text-center">Current Amount: $ <span id="money"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="item" class="col d-flex justify-content-center">
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <h3 class="text-center bg-primary text-light">Made Here, Not There... Or There</h3>
+    </footer>
 
     <script src="app/main.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
