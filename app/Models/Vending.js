@@ -12,8 +12,8 @@ export default class Vending {
             <img src="${this.img}" class="card-img-top" alt="this.name">
             <div class="card-body">
                 <h5 class="card-title">${this.name}</h5>
-                <p class="card-text">${this.count}</p>
-                <p class="card-text">${this.price}</p>
+                <p class="card-text">Available: ${this.count}</p>
+                <p class="card-text">$ ${this.price}</p>
                 <a href="#" class="btn btn-primary" onclick("app.vendingContoller.buy()")>Buy</a>
              </div>
         </div>

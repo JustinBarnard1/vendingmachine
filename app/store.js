@@ -2,9 +2,11 @@ import Vending from "./Models/Vending.js";
 
 let _state = {
   /** @type {Value[]} */
-  item: new Vending("doritos", "./doritos.jpg", 4, 2.50),
-  item: new Vending("Mountain Dew", "./mountainDew.png", 3, 1.75)
-};
+  items: [
+    new Vending("doritos", "./assets/doritos.jpg", 4, 2.50),
+    new Vending("Mountain Dew", "./assets/mountainDew.png", 3, 1.75)
+  ]
+}
 
 class Store {
   /**
