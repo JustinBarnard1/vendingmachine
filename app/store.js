@@ -1,6 +1,7 @@
 import Vending from "./Models/Vending.js";
 
 let _state = {
+  funds: 0,
   /** @type {Value[]} */
   items: [
     new Vending("doritos", "./assets/doritos.jpg", 4, 2.50),

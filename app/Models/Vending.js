@@ -14,7 +14,7 @@ export default class Vending {
                 <h5 class="card-title">${this.name}</h5>
                 <p class="card-text">Available: ${this.count}</p>
                 <p class="card-text">$ ${this.price}</p>
-                <a href="#" class="btn btn-primary" onclick("app.vendingContoller.buy()")>Buy</a>
+                <a href="#" class="btn btn-primary" onclick("app.VendingContoller.buy()")>Buy</a>
              </div>
         </div>
         `
