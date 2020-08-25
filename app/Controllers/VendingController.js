@@ -13,7 +13,7 @@ function _drawItem() {
 
 function _drawMoney() {
   let money = STORE.State.funds
-  document.getElementById("money").innerText = money
+  document.getElementById("money").innerHTML = money
 }
 
 
@@ -22,6 +22,7 @@ function _drawMoney() {
 export default class VendingController {
   constructor() {
     _drawItem()
+    _drawMoney()
   }
 
 

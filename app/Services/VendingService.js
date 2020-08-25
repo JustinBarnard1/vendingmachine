@@ -18,8 +18,7 @@ class VendingService {
     }
 
     addCoin() {
-        let money = STORE.State.funds
-        money += 0.25
+        STORE.State.funds += 0.25
     }
 
 
